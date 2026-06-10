@@ -1,2 +1,68 @@
 Software 
 Section: O
+
+USER@NAYEM MINGW64 ~/Desktop/Software
+$ git config --global user.name "Nayem26"
+
+USER@NAYEM MINGW64 ~/Desktop/Software
+$ git config --global user.email "nayemjannatul628@gmail.com"
+
+USER@NAYEM MINGW64 ~/Desktop/Software
+$ git config --global --list
+user.email=nayemjannatul628@gmail.com
+
+USER@NAYEM MINGW64 ~/Desktop/Software
+$ git config --global --list
+user.email=nayemjannatul628@gmail.com
+user.name=Nayem26
+
+USER@NAYEM MINGW64 ~/Desktop/Software
+$ git init
+Initialized empty Git repository in C:/Users/USER/Desktop/Software/.git/
+
+USER@NAYEM MINGW64 ~/Desktop/Software (master)
+$ git branch -M main
+
+USER@NAYEM MINGW64 ~/Desktop/Software (main)
+$ git remote add origin https://github.com/Nayem26/Software.git
+
+USER@NAYEM MINGW64 ~/Desktop/Software (main)
+$ git add .
+
+USER@NAYEM MINGW64 ~/Desktop/Software (main)
+$ git commit -m "Initial commit"
+[main (root-commit) f0ac0ae] Initial commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a.txt
+ create mode 100644 b.docx
+
+USER@NAYEM MINGW64 ~/Desktop/Software (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 225 bytes | 225.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Nayem26/Software.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+USER@NAYEM MINGW64 ~/Desktop/Software (main)
+$ git add a.txt
+
+USER@NAYEM MINGW64 ~/Desktop/Software (main)
+$ git commit -m "Updated Text File"
+[main 1d3dd68] Updated Text File
+ 1 file changed, 2 insertions(+)
+
+USER@NAYEM MINGW64 ~/Desktop/Software (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 299 bytes | 299.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Nayem26/Software.git
+   f0ac0ae..1d3dd68  main -> main
