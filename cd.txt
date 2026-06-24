@@ -1,0 +1,38 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    ifstream file("example.txt");
+
+    char ch;
+    int oparator = 0, parenthesis = 0;
+
+    while(file.get(ch))
+    {
+        if(ch=='+' || ch=='-' || ch=='*' ||
+           ch=='/' || ch=='%' || ch=='=')
+        {
+            oparator++;
+            cout << "Operator : " << ch << endl;
+        }
+
+        if(ch=='(')
+            parenthesis++;
+        else if(ch==')')
+            parenthesis--;
+    }
+
+    cout << "Number of operators = " << op << endl;
+
+    if(parenthesis == 0)
+        cout << "No parenthesis is missing.";
+    else if(parenthesis > 0)
+        cout << "Parenthesis missing.";
+    else
+        cout << "Extra parenthesis.";
+
+    file.close();
+    return 0;
+}
